@@ -1,5 +1,7 @@
 package usecase;
 
+import domain.dto.UserCreateInputData;
+
 public interface IUserCreateUseCase {
-    public UserCreateResponse Handle(UserCreateRequest request);
+    public void handle(UserCreateInputData inputData);
 }
